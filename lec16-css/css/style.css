@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #050505;
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.meals {
+  padding: 80px 0;
+}
+
+.meals>h2 {
+  position: relative;
+}
+
+.meals>h2:after {
+  content: '';
+  width: 20px;
+  height: 100%;
+  background-color: rgba(192, 57, 43, .96);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* margin-top: 10px; */
+  transition: all .3s ease;
+  z-index: -1;
+}
+
+.meals>h2:hover:after {
+  width: 100px
+}
+
+.meals-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.meals-wrapper .meal {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.meals-wrapper .meal:hover {
+  border-color: rgba(192, 57, 43, .5);
+  transform: translateY(-6px);
+}
+
+.meals-wrapper .meal .image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.meals-wrapper .meal img {
+  transition: all .3s ease;
+  height: 200px;
+  object-fit: cover;
+}
+
+.meals-wrapper .meal:hover img {
+  transform: scale(1.06);
+}
+
+.meal .info {
+  padding: 20px;
+}
+
+.meal .info h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.meal .info p {
+  font-size: .9rem;
+  color: #aaa;
+  min-height: 53px;
+  line-height: 2;
+}
+
+.meal .info a {
+  display: block;
+  background-color: rgba(255, 255, 255, .03);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(192, 57, 43, .2);
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all .3s ease;
+}
+
+
+.meal .info a:hover {
+  background: rgba(192, 57, 43, .12);
+  border-color: rgba(192, 57, 43, .5);
+  transform: translateY(-2px);
+}
+
+.meal .info a i {
+  font-size: 12px;
+}
+
+.meal .price {
+  background-color: rgba(192, 57, 43, .96);
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: 800;
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}

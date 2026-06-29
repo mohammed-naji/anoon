@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eaf5ff;
+}
+
+form {
+  width: 30%;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form div input,
+form button {
+  display: block;
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+
+form div input:focus {
+  /* box-shadow: 0 0 5px #007bff; */
+  border-radius: 1px;
+}

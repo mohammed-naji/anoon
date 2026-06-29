@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.tree {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+}
+
+.box1 {
+  /* margin: 20px; */
+  /* margin: 20px 40px; */
+  /* margin: 20px 40px 60px; */
+  /* margin: 20px 40px 60px 80px; */
+  /* margin-{top, right, bottom,left}: 20px; */
+  margin-bottom: 20px;
+}

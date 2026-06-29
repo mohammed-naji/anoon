@@ -1,0 +1,21 @@
+.box {
+  /* background-color: #543aaa; */
+  background: url(../images/image1.jpg) #1f173a;
+  height: 400px;
+  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
+body {
+  background-image: url(../images/shape.avif);
+  /* background-repeat: no-repeat; */
+}
+
+.user {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}

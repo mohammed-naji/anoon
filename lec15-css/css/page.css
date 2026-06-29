@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 3000px
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  background-color: #0092bb;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.top:hover {
+  background-color: #006783;
+}
+
+.menu {
+  background-color: #e3f9ff;
+
+}
+
+.menu .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.menu .items .item {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: rgba(227, 249, 255, .8);
+}
+
+.menu ul a {
+  color: #333;
+  font-weight: bold;
+}
+
+.menu .items .item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 5s linear;
+}
+
+.menu .items .item:hover img {
+  /* transform: rotate(360deg); */
+  animation: loop 5s linear infinite;
+}
+
+@keyframes loop {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .menu .items .item:hover {
+  animation: loop 3s infinite;
+} */
+
+/* 
+@keyframes loop {
+  0% {
+    background-color: #006783;
+  }
+
+  20% {
+    background-color: #f00;
+  }
+
+  75% {
+    background-color: #333;
+  }
+
+  100% {
+    background-color: #fbff00;
+  }
+
+} */
